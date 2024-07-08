@@ -1,0 +1,114 @@
+1. Post Man Request for Photo Shoto Details:
+	a. Post Request:
+		url: http://localhost:8080/photo_shoot
+		Request Body: {
+		"title": "test",
+		"description": "test Updated",
+		"status": "ACTIVE"
+		}
+	b. Put Request:
+		url: http://localhost:8080/photo_shoot?photo_shoot_id=1 (Value need to be changed according to you)
+		Request Body: {
+			"title": "test",
+			"description": "test Updated",
+			"status": "ACTIVE"
+		}
+	c. Get Request:
+		url: http://localhost:8080/photo_shoot?photo_shoot_id=1 (Value need to be changed according to you)
+	d. Delete Request: 
+		url: http://localhost:8080/photo_shoot?photo_shoot_id=1 (Value need to be changed according to you)
+	e. Get all the photo shoot:
+        url: http://localhost:8080/photo_shoot/all
+		
+2. Post Man Request for Look Book Details:
+	a. Post Request:
+		url: http://localhost:8080/look_book
+		Request Body: {
+			"author1": "John Doe",
+			"author2": "Jane Doe",
+			"photoShootId": "12345",
+			"status": "ACTIVE"
+		}
+	b. Put Request:
+		url: http://localhost:8080/look_book?look_book_id=1 (Value need to be changed according to you)
+		Request Body: {
+			"author1": "John Doe",
+			"author2": "Jane Doe",
+			"photoShootId": "12345",
+			"status": "ACTIVE"
+		}
+	c. Get Request Using Look Book Id:
+		url: http://localhost:8080/look_book?look_book_id=1 (Value need to be changed according to you)
+	d. Get Request Usin Photo Shoot Id: 
+		url: http://localhost:8080/look_book?photo_shoot_id=1 (Value need to be changed according to you)
+	c. Delete Request Id:
+		url: http://localhost:8080/look_book?look_book_id=1 (Value need to be changed according to you)
+	f. Get all the look book:
+	    url: http://localhost:8080/look_book/all
+
+3. Post Man Request for Schedule Details:
+	a. Post Request:
+		url: http://localhost:8080/schedule
+		Request Body: {
+			"photoShootId": "1",
+			"startDate": "2024-07-10T10:00:00Z",
+			"endDate": "2024-07-10T12:00:00Z",
+			"status": "ACTIVE"
+		}
+	b. Put Request:
+		url: http://localhost:8080/schedule?schedule_id=1 (Value need to be changed according to you)
+		Request Body: {
+			"photoShootId": "1",
+			"startDate": "2024-07-10T10:00:00Z",
+			"endDate": "2024-07-10T12:00:00Z",
+			"status": "ACTIVE"
+		}
+	c. Get Request Using Schedule Id:
+		url: http://localhost:8080/schedule?schedule_id=1 (Value need to be changed according to you)
+	d. Get Request Usin Photo Shoot Id: 
+		url: http://localhost:8080/schedule/id?schedule_id=1 (Value need to be changed according to you)
+	e. Delete Request Id:
+		url: http://localhost:8080/schedule?schedule_id=1 (Value need to be changed according to you)
+	f. Get all the schedule:
+        url: http://localhost:8080/schedule/all
+		
+4. Post Man Request for Payment Details:
+	a. Post Request:
+		url: http://localhost:8080/payment
+		Request Body: {
+			"photoShootId": "12345",
+			"amount": 250.75,
+			"status": "ACTIVE"
+		}
+	b. Put Request:
+		url: http://localhost:8080/payment?payment_id=1 (Value need to be changed according to you)
+		Request Body: {
+			"photoShootId": "123",
+			"amount": 250.75,
+			"status": "ACTIVE"
+		}
+	c. Get Request Using Payment Id:
+		url: http://localhost:8080/payment?payment_id=1 (Value need to be changed according to you)
+	d. Get Request Usin Photo Shoot Id: 
+		url: http://localhost:8080/payment/id?payment_id=1 (Value need to be changed according to you)
+	e. Delete Request Id:
+		url: http://localhost:8080/payment?payment_id=1 (Value need to be changed according to you)
+	f. Get all the payment:
+        url: http://localhost:8080/payment/all
+
+5. Post Man Request for Photo Upload Details:
+	a. Put Request:
+		url: http://localhost:8080/upload?look_book_id=1 (Value need to be changed according to you) and need
+		to pass the picture using form data.
+	b. Put Request by Upload id:
+		url: http://localhost:8080/upload/id?upload_id=1 (Value need to be changed according to you)
+		(Value need to be changed according to you) and need
+		to pass the picture using form data.
+	c. Get Request Using Upload Id:
+		url: http://localhost:8080/upload?upload_id=1 (Value need to be changed according to you)
+	d. Get Request Usin Look Book Id: 
+		url: http://localhost:8080/upload/look_book?look_book_id=1 (Value need to be changed according to you)
+	e. Delete Request Id:
+		url: http://localhost:8080/upload?upload_id=1 (Value need to be changed according to you)
+	f. Get all the upload:
+        url: http://localhost:8080/upload/all
